@@ -80,12 +80,7 @@ body {
     margin-top: 5%;
 }
 
-@media screen and (max-width:768px) {
-    footer[class="footer"] {
-        display: none;
-    }
-}
-@media screen and (max-width:375px) {
+@media screen and (max-width:1023px) and (min-width:768px) {
     aside[class="sidebar"] {
         display: none;
     }
@@ -93,4 +88,14 @@ body {
         width: 100vw;
     }
 }
-    
+@media screen and (max-width:767px) and (min-width:375px) {
+    footer[class="footer"] {
+        display: none;
+    }
+    aside[class="sidebar"] {
+            display: none;
+        }
+    main[class="main"] {
+            width: 100vw;
+    }
+}
